@@ -70,4 +70,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should ignore non-numerical input.
 
+# Module 4: Only accepting correct length of input
+
+## Test steps
+1. Build and run CiCo.
+2. Enter 000000000 into the field.
+
+## Expected results
+* Should ignore input that is not the correct length.
+
 
