@@ -42,7 +42,11 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null && isNumeric(stringToAdd)) {
-        super.insertString(fb, offset, stringToAdd, attr);
+        int valid = fb.getDocument().getLength();
+
+        if(valid < MAX_LENGTH) {
+          super.insertString(fb, offset, stringToAdd, attr);
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
@@ -54,7 +58,10 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null && isNumeric(stringToAdd)) {
-        super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        int valid = fb.getDocument().getLength();
+        if(valid < MAX_LENGTH) {
+          super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
@@ -66,7 +73,7 @@ public class Main {
     try {
       Integer.parseInt(stringToAdd);
       return true;
-    }catch (NumberFormatException e) {
+    } catch (NumberFormatException e) {
       return false;
     }
   }
