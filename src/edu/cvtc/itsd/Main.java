@@ -305,6 +305,12 @@ public class Main {
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
 
+    buttonAcknowledge = new JButton("OK");
+    buttonAcknowledge.addActionListener(handler);
+    buttonAcknowledge.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    buttonAcknowledge.setForeground(Color.red);
+    panelStatus.add(buttonAcknowledge);
+
     panelStatus.add(Box.createVerticalGlue());
 
     // Error panel ////////////////////////////////////////////////////////////

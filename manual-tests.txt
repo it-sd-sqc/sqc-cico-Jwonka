@@ -39,7 +39,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * The version number should be displayed after "CiCo" at the bottom.
 
-
+**********************************************************************************
 # Module 3: Visibility of system status 
 
 ## Test steps
@@ -61,6 +61,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+**********************************************************************************
 # Module 4: Only accepting numeric input
 
 ## Test steps
@@ -79,4 +80,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should ignore input that is not the correct length.
 
+**********************************************************************************
+# Module 5: Bypass timeout after card scan
+
+## Test steps
+1. Build and run CiCo.
+2. Enter 00000000 into the field and click Update.
+
+## Expected results
+* Should display a button to bypass timeout.
 
