@@ -90,3 +90,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display a button to bypass timeout.
 
+# Module 5: close application when window is closed
+
+## Test steps
+1. Build and run Cico.
+2. Close the window.
+
+## Expected results
+* Should close application when window is closed.
+
