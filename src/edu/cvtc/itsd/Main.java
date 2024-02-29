@@ -44,12 +44,11 @@ public class Main {
       if (fb.getDocument() != null && isNumeric(stringToAdd)) {
         int valid = fb.getDocument().getLength();
 
-        if(valid < MAX_LENGTH) {
+        if(valid <= MAX_LENGTH) {
           super.insertString(fb, offset, stringToAdd, attr);
+        } else {
+          Toolkit.getDefaultToolkit().beep();
         }
-      }
-      else {
-        Toolkit.getDefaultToolkit().beep();
       }
     }
 
@@ -59,12 +58,11 @@ public class Main {
     {
       if (fb.getDocument() != null && isNumeric(stringToAdd)) {
         int valid = fb.getDocument().getLength();
-        if(valid < MAX_LENGTH) {
+        if (valid <= MAX_LENGTH) {
           super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        } else {
+          Toolkit.getDefaultToolkit().beep();
         }
-      }
-      else {
-        Toolkit.getDefaultToolkit().beep();
       }
     }
   }
