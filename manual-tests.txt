@@ -99,3 +99,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should close application when window is closed.
 
+# Module 6: Aesthetic and minimalist design
+## Test steps
+1. Build and run CiCo
+2. View updated color scheme
+
+## Expected results
+* The main panel background color will be nobel gray and the scan box color will be silver.
+* The status panel background color will be whitesmoke.
+* Letters will be black font.
+
