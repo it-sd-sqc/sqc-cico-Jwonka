@@ -47,8 +47,11 @@ public class Main {
         if(valid < MAX_LENGTH) {
           super.insertString(fb, offset, stringToAdd, attr);
         } else {
-          Toolkit.getDefaultToolkit().beep();
+            Toolkit.getDefaultToolkit().beep();
         }
+       //if (fb.getDocument().getLength() == MAX_LENGTH) {
+         //Main.processCard();
+        //}
       }
     }
 
@@ -63,6 +66,9 @@ public class Main {
         } else {
           Toolkit.getDefaultToolkit().beep();
         }
+        //if (fb.getDocument().getLength() == MAX_LENGTH) {
+          //Main.processCard();
+        //}
       }
     }
   }
